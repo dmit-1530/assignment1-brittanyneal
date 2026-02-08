@@ -83,14 +83,20 @@ header {
 .plan {
     display: flex;
     flex-wrap: wrap;
-    width: calc((100% / 3) - (2rem / 2));
+    width: calc((100% / 3) - (2rem / 3));
     background-color: var(--grey-boxes);
     padding: 1.75rem 5.6875rem;
+    align-items: center;
+}
+
+.plan ul li {
+    list-style-type: disc;
 }
 
 .service-plans {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 6rem;
 }
 
 .service-features {
