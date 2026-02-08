@@ -1,7 +1,65 @@
-/* ***************** utilities & containers ***************** */
+:root {
+    --blue-shade: #0C4A6E;
+    --grey-boxes: #F4F4F5;
+}
 
-/* ***************** global typography ***************** */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-/* ***************** header & footer ***************** */
+/* Utility Classes */
 
-/* ***************** main content ***************** */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex-direction: row;
+}
+
+.inner-container {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 2rem 1.75rem;
+}
+
+/* Typography */
+h1 {
+    font-size: 1rem;
+    color: #F4F4F5;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2rem
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: .75rem;
+}
+
+.name-card {
+    display: flex;
+    flex-direction: row wrap;
+    width: calc((100% / 2) - (1rem / 2));
+    /* what is the last part of the equation??? fml */
+    background-color: #F4F4F5;
+    padding: 2.5rem 1.5625rem;
+    gap: 32px;
+    text-align: center;
+    justify-content: center;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: var(--blue-shade);
+    height: 8vh;
+}
