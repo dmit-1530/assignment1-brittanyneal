@@ -1,6 +1,7 @@
 :root {
     --blue-shade: #0C4A6E;
     --grey-boxes: #F4F4F5;
+    --off-white: #FAFAFA;
 }
 
 body {
@@ -18,35 +19,49 @@ body {
 
 .inner-container {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 1528px;
     padding: 2rem 1.75rem;
 }
 
 /* Typography */
 h1 {
-    font-size: 1rem;
+    font-size: 1.625rem;
     color: #F4F4F5;
     font-weight: 700;
-    margin-bottom: 2rem;
+    font-style: normal;
+    line-height: 150%;
 }
 
 h2 {
-    font-size: 2rem
+    font-size: 3.75rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 150%;
+}
+
+h4 {
+    font-size: 2.125rem;
+    font-weight: 700;
 }
 
 p {
-    font-size: .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 150%;
 }
 
+/* body */
 .name-card {
     display: flex;
     flex-direction: row wrap;
-    width: calc((100% / 2) - (1rem / 2));
-    /* what is the last part of the equation??? fml */
+    width: calc((100% / 2) - (2rem / 2));
     background-color: #F4F4F5;
     padding: 2.5rem 1.5625rem;
     gap: 32px;
@@ -57,9 +72,51 @@ p {
 .team {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 6rem;
 }
 
 header {
     background-color: var(--blue-shade);
-    height: 8vh;
+    height: 91px;
+}
+
+.plan {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((100% / 3) - (2rem / 2));
+    background-color: var(--grey-boxes);
+    padding: 1.75rem 5.6875rem;
+}
+
+.service-plans {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-features {
+    font-size: 2.125rem;
+    font-weight: 700;
+}
+
+.bold-prices {
+    font-weight: 700;
+    color: var(--blue-shade);
+}
+
+
+/* Footer */
+
+footer {
+    background-color: var(--blue-shade);
+
+}
+
+footer p {
+    color: var(--off-white);
+    font-size: 1rem;
+}
+
+.footer-white {
+    color: var(--off-white);
+    font-size: 1rem;
 }
