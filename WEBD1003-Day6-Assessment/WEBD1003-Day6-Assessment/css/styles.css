@@ -68,6 +68,7 @@ p {
     text-align: center;
     justify-content: center;
 }
+/* Flexbox decision #1: added flex to create an equal layout for the team member tiles; added flex-direction: row to ensured that the tiles were read from left to right and not stacked on top of each other */
  
 .team {
     display: flex;
@@ -88,6 +89,7 @@ header {
     padding: 1.75rem 5.6875rem;
     align-items: center;
 }
+/* Flexbox decision #2: used flex-wrap to bring all three tiles beside each other on the same line with equal spacing, using the same methods as the team member's section but adjusting the math/calc function to reflect this section's information */
  
 .plan ul li {
     list-style-type: disc;
@@ -98,6 +100,7 @@ header {
     flex-wrap: wrap;
     margin-bottom: 6rem;
 }
+/* Flexbox decision #3: added flex wrap here to seperate the service plans from the title, otherwise without flex, all of the content and service plan tiles were beside one another */
  
 .service-features {
     font-size: 2.125rem;
